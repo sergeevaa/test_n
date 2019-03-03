@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://yastatic.net/iconostasis/_/8lFaTHLDzmsEZz-5XaQg9iTWZGE.png">
+
+    <title>Дефект, ошибки, баги</title>
+
+    <meta name="description" content="Краткое описание презентации">
+    <meta name="author" content="Имя автора">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/user.css">
+	<link rel="stylesheet" href="css/tomorrow.css">
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<section>
+    <h1>Дефект, ошибки, баги</h1>
+    <br> <small>
+    <ul class="fragment"><b>Темы лекции:</b>
+        <li>Что такое ошибка, дефект, сбой и баг</li>
+        <li>Как завести хороший отчет об ощибке</li>
+        <li>Оракулы</li>
+    </ul></small>
+    <p class="author">Сергеева Анастасия</p>
+</section>
+
+<!-- Добавлять новые слайды сюда -->
+
+
+<section>
+<section>
+    <h3>Что обычно делает тестировщик?</h3>
+    <p class="fragment" align="left">Тестирование - проверяем, что работа продукта соответствует требованиям</p>
+     <p class="fragment" align="left">А если не соответствует - то это дефект</p>
+      <img width="390" height="350"  data-src="media/11.webp">
+</section>
+
+<section>
+    <ul>
+        <li>Ошибка</li>
+        <small class="fragment">[ISQTB] Действие человека, которое приводит к неправильному результату.</small>
+        <li>Дефект</li>
+        <small class="fragment"> - результат ошибочного действия: можно не заметить, но он есть. <br> [ISQTB] Изъян в компоненте или системе, который может привести компонент или систему к невозможности выполнить требуемую функциональность, например неверный оператор или определение данных. Дефект, обнаруженный во время выполнения, может привести к отказам  компонента или системы.</small>
+        <li>Сбой</li>
+        <small class="fragment"> - проявление дефекта и использовании системы</small>
+        <li>Баг</li>
+        <small class="fragment"> - жаргонный синоним "дефект"</small>
+    </ul>
+</section>
+
+    <section>
+    <h3>Какие бывают ошибки:</h3>
+    <ul>
+        <li><p class="fragment">функциональные</p>  </li>
+        <li><p class="fragment">верстки</p>  </li>
+        <li><p class="fragment">интеграционные</p>  </li>
+        <li><p class="fragment">контента</p>  </li>
+        <li><p class="fragment">локализации</p>  </li>
+        <li><p class="fragment">удобства использования</p>  </li>
+        <li><p class="fragment">безопасности</p>  </li>
+    </ul>
+</section>
+</section>
+
+<section>
+    <h3>Алгоритм действий при обнаружении ошибки</h3>
+
+    <section> <br><br>
+        <img data-src="media/47.png">
+    </section>
+
+    <section><br><br>
+        <img  data-src="media/48.png">
+    </section>
+
+    <section><br><br>
+        <img  data-src="media/54.jpg">
+    </section>
+
+    <section><br><br>
+        <img  data-src="media/49.png">
+    </section>
+
+    <section><br><br>
+        <img data-src="media/50.png">
+    </section>
+
+    <section><br><br>
+        <img data-src="media/51.png">
+    </section>
+
+    <section><br><br>
+        <img data-src="media/46.png">
+    </section>
+
+</section>
+
+    <section>
+        <p align="left">
+            <b>Тикет / Отчет об ошибке</b> – это технический документ, описывающий ситуацию или последовательность действий, приведших к некорректной работе объекта тестирования, с указанием причин и ожидаемого результата.
+        </p>
+    </section>
+</section>
+
+    <section><h2>Хороший отчет об ошибке</h2>
+
+        <section><p align="left" class="fragment">
+        — это документ, после прочтения которого человек, знакомый с продуктом, сразу поймет, где была допущена ошибка, а не знакомый сможет с первого раза воспроизвести ошибку по указанным шагам и приложенным материалам.
+    </p>
+    </section>
+
+
+    <section><br><ul>
+        <li>Тип</li><small class="fragment">— позволяет понять содержимое тикета </small>
+        <li>Заголовок</li><small class="fragment">— коротко о найденой проблеме</small>
+        <li>Описание</li><small class="fragment">— полное описание найденной проблеме</small>
+        <li>Инструкция для воспроизведения</li><small class="fragment">— алгоритм для воспроизведения обнаруженной проблеме </small>
+        <li>Информация об окружении</li><small class="fragment">— сокращает область поиска причин обнаруженной проблемы </small>
+        <li>Дополнительные материалы</li><small class="fragment">— наглядное представление о найденной проблеме </small>
+        <li>Критичность</li><small class="fragment">- на сколько ошибка задевает ПО в целом</small>
+    </ul>
+</section>
+</section>
+    <section>
+        <h2>Тип</h2>
+        <section>
+            <ul>
+                <li>Ошибка</li>
+                <small class="fragment"> - отчет об ошибке</small>
+                <li>Улучшение</li>
+                <small class="fragment"> - отчеты о проблемах в требованиях, дизайне и т.д.</small>
+                <li>Задача</li>
+                <small class="fragment"> - требования</small>
+            </ul>
+        </section>
+    </section>
+
+    <section>
+        <h2>Заголовок</h2>
+        <section>должен коротко передает суть проблемы</section>
+        <section> <br> <br>
+            <h3>Правило WWW</h3>
+            <br><b class="fragment">WHAT</b>
+            <br><b class="fragment">WHERE</b>
+            <Br><b class="fragment">WHEN</b>
+            <br><img class="fragment" width="350" height="250" data-src="media/5.webp">
+        </section>
+        <section><br>
+            <p><b>Хорошее названия</b></p>
+            <p align="left"><i>На главной страниц поиска в строке ввода запроса сохраняется введенный ранее текст после обновления страницы</i></p>
+                <table><tr>
+                    <td> <ul><li>Где?</li>
+                        <small align="left" class="fragment">На главной страниц поиска в строке ввода запроса...</small>
+                        <li>Что?</li>
+                        <small align="left" class="fragment">...сохраняется введенный ранее текст...</small>
+                        <li>Когда?</li>
+                        <small align="left" class="fragment">...после обновления страницы </small></ul></td>
+                    <td> <img   width="390" height="350" data-src="media/8.png"></td></tr>
+                </table>
+        </section>
+
+        <section><br><br>
+            <p><b>Плохие названия</b></p>
+            <ul>
+                <li><p class="fragment">Ошибка в Корзине</p>  </li>
+                <li><p class="fragment">Страница не найдена</p>  </li>
+                <li><p class="fragment">Нет сообщения об ошибке </p>  </li>
+            </ul>
+            <img   width="390" height="350" data-src="media/80.webp">
+        </section>
+
+        <section><br><br>
+            <h3>Практика</h3>
+            <p>Что? Где? Когда?</p>
+            <ul class="fragment">Придумать названия для случаев:
+                <li><p>ке.12.2019
+                <br><small>в блогах у даты публикации поста вместо 31.12.2019</small></p>  </li>
+                <li><p class="fragment">4*3=1
+                <br><small>в калькуляторе 4*3=12</small></p></li>
+                <li><p class="fragment">в блогах легла соц.сеть для поделяшек
+                <br><small>вместо репоста поста</small></p></li>
+            </ul>
+
+        </section>
+    </section>
+
+<section>
+    <h2>Описание</h2>
+    <section>должно в полной мере передать суть проблемы</section>
+    <section>
+        <ul><b>может состять из:</b>
+            <li>предусловия</li>
+            <li>тестовые данные</li>
+            <li>ссылки</li>
+            <li>что считаете нужным</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Кто будет читать тикет?</h3>
+        <p align="left"><b>Разработчик
+            <br>Менеджер<br>Аналитик<br>Другой тестировщик<br>и даже может быть ваш руководитель</b></p>
+    </section>
+</section>
+
+    <section>
+        <h2>Инструкция для воспроизведения</h2>
+        <section>
+            читающий описание может знать систему недостаточно, чтобы понять суть ошибки, поэтому в инструкции пишем шаги для воспроизведения ошибки
+        </section>
+        <section><br><br><br>
+            <p align="left">Инструкция состоит из шагов для воспроизведения, ожидаемого результата (ОР) и фактического/полученного результата (ФР / ПР).
+                <br><br>Шаги для воспроизведения не должныть быть "перегружены" информацией</p>
+            <ol class="fragment">
+                <li> Что сделали? </li>
+                <li> Что случилось? </li>
+                <li> А как должно быть? </li>
+            </ol>
+        </section>
+        <section><br><br><br>
+            <ul><b>Не определили необходимое и достаточное?</b>
+                <li>Воспроизводим</li>
+                <li>Записываем шаги</li>
+                <li>Открываем другой браузер / в инкогнито / на другом устройстве ПО</li>
+                <li>Повторяем шаги</li>
+            </ul>
+            <p align="left" class="fragment"><b>Повторили?</b> Пытаемся убоать / сократить шаги и повторить еще раз</p>
+            <p align="left" class="fragment"><b>Не повторили?</b> Какие-то шаги были нужными и их надо вернуть</p>
+        </section>
+
+        <section><br><br><br>
+            <p align="left">описание должно быть понятно всем в команде, иначе</p>
+            <img   width="390" height="350" class="fragment" data-src="media/9.webp">
+        </section>
+    </section>
+
+    <section>
+        <h2>Информация об окружении</h2>
+        <section>
+            <p align="left">Где? В баре? Дома? На улице?<br> Ответ: г Москва, ул. Ленина, д 6, кв 7</p>
+        </section>
+
+        <section>
+            <p align="left">Проблема может казаться только на одной платформе или на конкретном движке браузера <br> <br>
+            Важно указать и операционную систему <br><br> - это все сужает круг поиска ошибки</p>
+        </section>
+    </section>
+
+    <section>
+        <h2>Дополнительные материалы</h2>
+        <section>
+            <b>НУЖНЫ УЛИКИ!</b>
+        </section>
+
+        <section>
+            <ul>
+                <li>Фото</li>
+                <li>Видео</li>
+                <li>Логи</li>
+                <li>Файлы</li>
+                <li>прочее</li>
+            </ul>
+        </section>
+
+    </section>
+
+    <section>
+        <h2>Критичность / Приоритет</h2>
+        <section><br><br>
+            <ul>
+                <li>Блокер (Blocker) </li>
+                <small class="fragment">Приложение не работает. Дальнейшая работа с программой или тестируемой функциональностью невозможна.</small>
+                <li>Критичный (Critical) </li>
+                <small class="fragment">Приложение не работает, но дальнейшая работа с программой или тестируемой функциональностью возможна.</small>
+                <li>Средний (Major)</li>
+                <small class="fragment">Приложение работает, но программа или тестируемая функциональность выдает некорректный результат.</small>
+                <li>Низкий (Minor)</li>
+                <small class="fragment">Ошибка не нарушает логику программы или тестируемой функциональности. Очевидная проблема интерфейса.</small>
+                <li>Незначительный (Trivial)</li>
+                <small class="fragment">Ошибки, не касающиеся логики программы или тестируемой функциональности.</small>
+            </ul>
+        </section>
+
+    </section>
+
+        <section>
+            <h2>Пример</h2>
+
+        <section> <br>
+            <small align="left">
+                <table>
+                    <tr>
+                        <td>
+                            <br><b>Тип:</b> <i>Ошибка</i>
+                            <br><br><b>Заголовок:</b> <i>На странице авторизации в поле пароля сохраняется введенный ранее текст после выхода из системы.</i>
+                            <br><br><b>Описание:</b> <i>На странице авторизации, открытой в отдельной вкладке после выхода из системы, поля логина и пароля заполняются учетными данными неавторизованного пользователя.</i>
+                            <br><br><b>Предусловие:</b> <i>предварительно войти в аккаунт user (логин "login" / пароль "password")</i>
+                            <br><br><b>Шаги:</b> <i>
+                            <br>1. Перейти на страницу https://www.google.ru
+                            <br>2. Нажать на аватарку.
+                            <br>3. Нажать кнопку "Выйти".
+                            <br>4. Обновить страницу (клавиша F5).
+                            <br>5. Нажать кнопку «Добавить аккаунт» правой кнопкой мыши.
+                            <br>6. В контекстном меню выбрать пункт "Открыть в новой вкладке". </i>
+                        </td>
+                        <td>
+                            <br><b>Результат:</b> <i>
+                            <br>Поле Логин заполнено: login.
+                            <br>Поле Пароль заполнено: password. </i>
+                            <br><br><b>Ожидаем:</b> <i>
+                            <br>Поле Логин пустое.
+                            <br>Поле Пароль пустое. </i>
+                            <br><br><b>Окружение:</b> <i>
+                            <br>macOS 10.13.6: Google Chrome версии 72.0.3584.0 (64 бит) </i>
+                            <br><br><b>Сборка:</b> <i>"new_auth"</i>
+                            <br><br><b>Приоритет:</b> <i>Критичный</i>
+                        </td>
+                    </tr>
+                </table>
+            </small>
+        </section>
+        </section>
+    <section data-background="media/83.png"
+             data-background-size="contain">
+        <!-- поля тикета вообще -->
+    </section>
+
+<section>
+    <h3>Жизненный цикл тикета с домашними заданиями</h3>
+    <section ><br>
+        <img data-src="media/93.png">
+    </section>
+    <section ><br>
+        <img data-src="media/55.png">
+    </section>
+</section>
+
+<section>
+	<h3>Нюансы</h3>
+	<ol >
+			<li class="fragment"> Не получается стабильно воспроизвести</li>
+			<li class="fragment"> Неясен ожидаемый результат</li>
+			
+	</ol>
+</section>
+
+
+    <section
+            data-background-image="media/1.png"
+            data-background-size="contain">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><small class="fragment"><i>Спецификация, Техническое задание (ТЗ), Документация</i></small>
+    </section>
+
+    <section>
+        <p>ПО соответствует требованиям + работает без ошибок == ПО работает верно?</p>
+        <h3 class="fragment">НЕТ!</h3>
+        <Br>
+        <br>
+        <br>
+        <small><i>Расхождение между программой и ее спецификацией считается ошибкой тогда, и только тогда, когда спецификация существует и она правильна <br> <b>(Канер, “Тестирование ПО”)</b></i></small>
+    </section>
+    <section>
+        <section>
+            <h3>Почему требования могут быть "неверными"?</h3>
+            <ul>
+                <li>Их пишут люди</li>
+                <li>Они могут быть недокументированы</li>
+            </ul>
+            <p class="fragment"><b>Хорошо протестировать программу !== сравнить реализацию с ТЗ (но требования - важнее)</b></p>
+        </section>
+
+        <section>
+            <h2>Оракул</h2>
+            <p> - эвристический признак или механизм для распознования проблемы.</p>
+        </section>
+    </section>
+    <section>
+        <section>
+            <h2>Как понять, что ПО работает неправильно?</h2>
+        </section>
+
+        <section>
+            <h4>1. Сравнить с предыдущей версией</h4>
+            <br>
+            <table>
+                <tr><td><img src="media/3.png" height=250></td><td><img src="media/4 2.png" height=250></td></tr>
+                <tr><td><small>Version 1.0</small></td><td><small>Version 1.1</small></td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h4>2. Сравнить с похожими ПО</h4>
+            <br>
+            <img src="media/5.png">
+        </section>
+
+        <section>
+            <h4>3. Прикинуть, какие в этом случае ожидания у пользователя</h4>
+        </section>
+
+        <section>
+            <h4>4. Сравнить с другими похожими элементами системы</h4>
+            <br>
+            <table>
+                <tr><td><img src="media/6 2.png" height=250></td><td><img src="media/7.png" height=250></td></tr>
+                <tr><td><small>Все страницы сайта</small></td><td><small>Одна страница</small></td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h4>5. Проверить на соответствие законам и стандартам</h4>
+            <img src="media/18.png">
+        </section>
+        <section>
+            <h4 class="transparent">6. Проверить, что текущее поведение не похоже на какую-то уже известную проблему</h4>
+        </section>
+
+        <section>
+            <h4>7. Поведение системы соответствует представлениям о мире</h4>
+            <img src="media/9.png" height="200">
+            <img src="media/10.png" height="200">
+        </section>
+    </section>
+<section>
+    <h2>Задание</h2>
+    <ol>
+        <li>Найти любое web-приложение</li>
+        <li>Провести исследовательское тестирование web-приложения</li>
+        <li>Завести отчеты об ошибке в трекере (3-5 штук)</li>
+    </ol>
+        <br><br><br>
+        <ul>Цель:
+            <li>научиться пользоваться баг-трекером</li>
+            <li>создавать отчеты об ошибках</li>
+        </ul>
+</section>
+    <section>
+        <h2>Спасибо за внимание!</h2>
+        <h2>Вопросы?</h2>
+    </section>
+
+<!--<section>-->
+    <!--<h1>Тесткейс</h2>-->
+      <!--<h3>testcase</h3>-->
+       <!--<img  class="fragment" data-src="media/96.jpg">   -->
+<!--</section>-->
+
+
+<!--<section>-->
+    <!--<p>ТК -  отдельный тест, предназначенный для проверки <span class="fragment highlight-red">определённого</span> свойства тестируемой системы. </p> -->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h1>Что такое ТК?</h2>-->
+       <!--<img  class="fragment" data-src="media/97.png">   -->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h3>Поля ТК </h3>-->
+		<!--<ol>-->
+			<!--<li>ID </li>-->
+			<!--<li>Название</li>    -->
+			<!--<li>Предусловия</li>-->
+			<!--<li>Шаги</li>-->
+			<!--<li>Ожидаемый результат</li>       -->
+   		<!--</ol>-->
+<!--</section>-->
+
+<!--<section  data-background="media/94.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; позитивные и негативные ТК &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section  data-background="media/72.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; позитивные и негативные ТК &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section  data-background="media/98.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; позитивные и негативные ТК, про авторизацию &ndash;&gt;-->
+  <!--<h3>Позитивные и негативные ТК</h2>-->
+  <!--</br></br></br></br></br></br></br></br></br></br></br></br></br>-->
+<!--</section>-->
+
+<!--<section >-->
+ <!--<h3>ТК на продукт</h2>-->
+ <!--&lt;!&ndash; перечень &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section  data-background="media/27.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; перечень &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h4 >Тест-сьют </br>(тест комплект, тестовый набор) </h1>-->
+    <!--<p>- это комбинация ТК для проверки определенной части ПО, объединенной общей функциональностью или целями, -->
+    <!--преследуемыми запуском данного набора.</h4>-->
+<!--</section>-->
+
+<!--<section  data-background="media/28.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; тест-сьют &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h2>Требования к атомарности ТК </h1>-->
+      <!--<p class="fragment">зависят от команды</br> <img data-src="media/99.webp"></h1>-->
+<!--</section>-->
+
+<!--<section  data-background="media/82.png"-->
+ <!--data-background-size="contain">-->
+<!--&lt;!&ndash; объединение ОР &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section  data-background="media/30.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; футер (параметризация)&ndash;&gt;-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h2>Инструменты  для работы с ТК</h1>-->
+    <!--<p class="fragment">зависят от команды</br> <img data-src="media/100.webp"></h1>-->
+<!--</section>-->
+
+<!--<section>-->
+  <!--<h2>работа с ТК</h1>-->
+  	<!--<ol>-->
+			<!--<li>Составление</li>-->
+			<!--<li>Прогон</li>    -->
+   		<!--</ol>-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h3>Зачем нужны ТК?</h2> -->
+   <!--<p>  Проверка продукта без ознакомления со всей документацией </p> -->
+     <!--<img   width="350" class="fragment" data-src="media/76.jpg">	-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h3>Когда используются ТК?</h2> -->
+    <!--<ol>-->
+			<!--<li>Регрессионное тестирование</li>-->
+			<!--<li>Тестирование новой функциональности</li>      -->
+			<!--<li>Редизайн продукта</li>    -->
+			<!--<li>Разработка продукта под новую платформу (десктоп -> мобильное)</li> -->
+			<!--<li>Автотесты</li> -->
+   		<!--</ol>-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h3>Результат выполнения</h3>-->
+		<!--<ul>-->
+			<!--<li class="fragment">Положительный  </li>-->
+			<!--<li class="fragment">Отрицательный  </li>    -->
+			<!--<li class="fragment">Выполнение ТК блокировано</li>    -->
+   		<!--</ul>-->
+   		<!---->
+<!--</section>-->
+
+<!--<section>-->
+  <!--<h3>Положительный Результат</h3>-->
+   <!--<p > -->
+   		<!--<img  width="250"data-src="media/101.webp"> -->
+   		<!--</p> -->
+  <!--<p > <span class="fragment highlight-green">PASSED</span>        </p>-->
+<!--</section>-->
+
+<!--<section>-->
+ <!--<h3>отрицательный Результат</h3>-->
+   <!--<p >    		-->
+   		<!--<img width="250" data-src="media/102.webp"> -->
+   		<!--</p> -->
+  <!--<p >  <span class="fragment highlight-red"> FAILED  </span>    </p>-->
+<!--</section>-->
+
+<!--<section>-->
+ <!--<h3>выполнение тк блокировано</h3>-->
+   <!--<p > -->
+   		<!--<img width="250" data-src="media/103.webp"> -->
+   		<!--</p> -->
+  <!--<p >    <span class="fragment highlight-yellow">   BROKEN </span> </p>-->
+<!--</section>-->
+
+<!--<section  data-background="media/104.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash;прогоны&ndash;&gt;-->
+<!--</section>-->
+
+
+
+
+
+<!--<section  data-background="media/67.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; правила написания тк &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section  data-background="media/69.png"-->
+ <!--data-background-size="contain">-->
+  <!--<h2 >Изолированность</h2>-->
+  <!--<h2 ></br></br></br></br></br></br></br></br></br></br></br></br></br></h2>-->
+
+    <!---->
+<!--</section>-->
+
+
+
+<!--<section  data-background="media/70.png"-->
+ <!--data-background-size="contain">-->
+    <!--<h3 >НЕ изолированность - плохо</h2>-->
+      <!--<h2 ></br></br></br></br></br></br></br></h2>-->
+
+          <!--<p>аналогично, предыдущий, так же, выше,...</br>плохие слова для ТК</p>   -->
+          <!---->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h2>конкретные формулировки</h2>-->
+          <!--<p class="fragment">«Поведение соответствует ожидаемому» - очень плохая формулировка!</p>   -->
+             <!--<p class="fragment"><span class="fragment highlight-red">очень плохая формулировка!</span></p>    -->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h2> ОЧЕНЬ! ПЛОХАЯ! ФОРМУЛИРОВКА!</h2>  -->
+     <!--<img  class="fragment"  width="250" height="250" data-src="media/35.webp"> -->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h2> Ожидания у всех разные</h2>  -->
+     <!--<img  data-src="media/36.png"> -->
+<!--</section>-->
+
+
+<!--<section>-->
+     <!--<h2>Прогнать ТК должен смочь любой из команды </h2>  -->
+<!--</section>-->
+
+<!--<section  data-background="media/95.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash; кто прогоняет тк &ndash;&gt;-->
+<!--</section>-->
+
+<!--<section data-background-video="media/65.mp4">-->
+ <!--&lt;!&ndash; видяшка про нового в команде &ndash;&gt;-->
+ <!--<h4 class="fragment" ><span class="fragment highlight-green">он тоже хочет понимать</span><h4>-->
+<!--</section>-->
+
+
+
+<!--<section>-->
+    <!--<h3>Упражнение</h3>-->
+     <!--<p>Цель: проверить замену руб на знак рубля в отложенных при смене типа выдачи</p>-->
+ <!--<p>ps: учитывая, что функциональность уже в проде</p>     -->
+	  <!--<img   data-src="media/20.png">	-->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<h3>Нам нужно придумать</h3>-->
+		<!--<ol>-->
+			<!--<li>ID </li>-->
+			<!--<li>Название</li>    -->
+			<!--<li>Предусловия</li>-->
+			<!--<li>Шаги</li>-->
+			<!--<li>Ожидаемый результат</li>       -->
+   		<!--</ol>-->
+<!--</section>-->
+
+<!--<section>-->
+<!--<table>-->
+						<!--<tbody>-->
+		<!--<thead>-->
+							<!--<tr>-->
+								<!--<th>Поле</th>-->
+								<!--<th>Значение</th>-->
+							<!--</tr>-->
+						<!--</thead>-->
+							<!--<tr>-->
+								<!--<td>ID</td>-->
+								<!--<td  class="fragment">OT1</td>-->
+								<!---->
+							<!--</tr>-->
+							<!--<tr>-->
+								<!--<td>Название</td>-->
+								<!--<td  class="fragment">Замена "руб" на ₽ в Отложенных (грид)</td>-->
+								<!---->
+							<!--</tr>-->
+							<!--<tr>-->
+								<!--<td>Предусловия</td>-->
+								<!--<td class="fragment">1. зайти на Маркет, -->
+												<!--</br>2. залогиниться, -->
+												<!--</br>3. добавить три модели в отложенные</td>-->
+							<!--</tr>-->
+							<!--<tr>-->
+								<!--<td>Шаги</td>-->
+								<!--<td class="fragment">1. Перейти в отложенные</br>-->
+													 <!--2. Сменить типа выдачи на грид</td>-->
+							<!--</tr>-->
+							<!--<tr>-->
+								<!--<td>Ожидаемый результат</td>-->
+								<!--<td class="fragment">Все "руб" заменены на ₽ </td>-->
+							<!--</tr>-->
+						<!--</tbody>-->
+					<!--</table>-->
+
+				<!--</section>-->
+
+
+<!--<section data-background="media/77.png"-->
+ <!--data-background-size="contain">-->
+<!--</section>-->
+
+<!--<section  data-background="media/58.png"-->
+ <!--data-background-size="contain">-->
+    <!--<h3 style="text-align: up;" >Учитывая замечания и атомарность ТК</h3>-->
+    <!--<h3> </br></br></br></br></br></br></br></br></br> </h3>-->
+    <!--<h3>  </h3>-->
+    <!--<h3>  </h3>-->
+    <!--<h3>  </h3>-->
+<!--</section>-->
+		<!---->
+<!--<section  data-background="media/40.png"-->
+ <!--data-background-size="contain">-->
+ <!--&lt;!&ndash;минусы и плюсы&ndash;&gt;-->
+<!--</section>-->
+			<!---->
+<!--<section>-->
+<!--<h2>Нюансы</h4> -->
+	<!--<ul>-->
+			<!--<li class="fragment">PostConditions - правила хорошего тона</li>-->
+			<!--<li class="fragment" >Кодовое название  <img height="100" data-src="media/75.png"></li>       -->
+   		<!--</ul> -->
+   <!--<p class="fragment" ><span class="fragment highlight-red">нельзя </span>-->
+   <!--<span class="fragment highlight-red">прогонять </span>-->
+     <!--<span class="fragment highlight-red">ТК </span>-->
+      <!--<span class="fragment highlight-red">на </span>	-->
+          <!--<span class="fragment highlight-red">рабочей </span>-->
+             <!--<span class="fragment highlight-red">базе </span><p>	-->
+<!--</section>-->
+		<!---->
+
+
+
+<!--<section>-->
+    <!--<h2>Лекция: Дефект и ТК</h4>  -->
+     <!--<p>ТК — проверка определенного свойства продукта. </p>  -->
+      <!--<p>Если при прогоне ТК отрицательный результат - то это дефект.</p>  -->
+     <!--<p>На дефекты заводят тикеты.</p>  -->
+    <!---->
+<!--</section>-->
+
+
+
+
+
+<!--<section>-->
+     <!--<h3> Литература </h3>  -->
+     <!--<ul>-->
+     			<!--<li><a href="https://habrahabr.ru/post/246463/">Максимально эффективный ТК</a> </li>  -->
+			<!--<li><a href="http://www.protesting.ru/testing/testcase.html">Еще про ТК</a> </li>  -->
+			<!--<li> <a href="http://barbaricqa.com/blog/archives/1768">О баг-репортах</a></li>-->
+			<!--<li><a href=" https://habrahabr.ru/post/156069/">Ошибки при составлении баг-репортов</a> </li>-->
+			<!--<li><a href="http://www.protesting.ru/testing/bug_lifecycle.html">ЖЦ баг-репорта</a> </li>     -->
+
+   		<!--</ul>  -->
+<!--</section>-->
+
+<!--<section>-->
+     <!--<h3> Домашняя работа </h3>  -->
+     <!--<p>5 позитивных ТК</p>  -->
+        <!--<p>1 негативный ТК</p>  -->
+     <!--<p><a href="https://connect.yandex.ru/portal/home">по главной странице Коннекта</a>  </p>  -->
+<!--</section>-->
+
+<!--<section>-->
+    <!--<img data-src="media/44.webp"> -->
+     <!--<p>Спасибо за внимание!</p>  -->
+     <!--<p>Вопросы?</p>  -->
+     <!--<p></p>  -->
+<!--</section>-->
+
+
+</div></div>
+
+<script src="js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+        controls: false,
+        slideNumber: true,
+        history: true,
+        dependencies: [
+            {
+                src: 'js/highlight.js',
+                async: true,
+                condition: function () {
+                    return Boolean(document.querySelector('pre code'));
+                },
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+
+</body>
+</html>
