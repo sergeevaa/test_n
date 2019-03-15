@@ -446,7 +446,7 @@
         </section>
         <section><br>
             <h4>Отчет об ошибке</h4>
-            <p align="left">вспоминаем предыдущую лекцию</p>
+            <p align="left">вспоминаем предыдущю лекцию</p>
         </section>
         <section>
             <table align="left" cellpadding="10">
@@ -726,80 +726,78 @@
 
 </section>
 
+<!--
 <section>
     <h3>Часть 2. Требования к ПО</h3>
-     <ul>
-        <li>Требования и ожидаемый результат</li>
-        <li>Как тестировать требования</li>
+     <ul class="fragment">
+        <li>2.1 Требования и ожидаемый результат</li>
+        <li>2.2 Как тестировать требования</li>
     </ul>
 </section>
 
 <section>
-    <h3>Требования и ОР</h3>
-    <section>
-     <img  data-src="media/expect.png">
-    </section>
+    <h3>2.1 Требования и ожидаемый результат</h3>
+     <img  data-src="media/expect.png"> 
+</section>
 
-    <section><br>
-        <h4>Тестирование</h4>
-        <p>Проверка соответствия программы требованиям</p>
-    </section>
+<section>
+    <h3>Тестирование</h3>
+    <p class="fragment">Проверка соответствия программы требованиям</p>
+</section>
 
-    <section><br>
-        <h4>Требования</h4>
-        <p> Или ТЗ, документация, спецификация - это описание того, как система должна работать</p>
-    </section>
+<section>
+    <h3>Требования</h3> 
+    <p class="fragment"> Или ТЗ, документация, спецификация - это описание того, как система должна работать</p> 
+</section>
 
-    <section><br>
-        <h4>Пример: wiki-разметка</h4>
-        <p> ((https://ya.ru/ Яндекс))</p>
-        <img class="fragment" width="100" data-src="media/strela.jpg">
-        <p class="fragment"><u>Яндекс</u></p>
-    </section>
+<section>
+    <h3>Пример: wiki-разметка</h3>
+    <p class="fragment"> ((https://ya.ru/ Яндекс))</p>
+    <img class="fragment" width="100" data-src="media/strela.jpg">
+    <p class="fragment"><u>Яндекс</u></p> 
+</section>
 
-    <section><br>
-        <p>То же самое, но в виде двух полей для редактирования</p>
-        <p class="fragment">Название указывать не обязательно, оно для удобства</p>
-        <img  class="fragment" data-src="media/giperEdit.png"> <br>
-        <img class="fragment" width="100" data-src="media/strela.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img class="fragment" width="100" data-src="media/strela.jpg">
-        <p class="fragment"> Яндекс &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://ya.ru/</p>
-    </section>
+<section>
+    <h3>Пример</h3>
+    <p class="fragment">То же самое, но в виде двух полей для редактирования</p> 
+    <p class="fragment">Название указывать не обязательно, оно для удобства</p> 
+    <img  class="fragment" data-src="media/giperEdit.png"> <br>
+    <img class="fragment" width="100" data-src="media/strela.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img class="fragment" width="100" data-src="media/strela.jpg"> 
+    <p class="fragment"> Яндекс &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://ya.ru/</p>
+</section>
 
-    <section><br>
-        <p>Значения в поле "Источник" - ссылки</p>
-        <img  data-src="media/giper.png">
-    </section>
+<section>
+    <h3>Пример: После сохранения</h3>
+    <p class="fragment">Значения в поле "Источник" - ссылки</p>
+    <img  data-src="media/giper.png">
+</section>
 
-    <section data-background="media/giper.png"
-             data-background-size="contain">
-    </section>
+<section data-background="media/giper.png"
+ data-background-size="contain">  
+</section>
 
-    <section><br>
-        <h4>ТЗ: Поиск по гиперссылке</h4>
-        <p>Поиск осуществляется как по названию так и по значению гиперссылки. Критерием заполненности условия фильтрации считается заполнение хотя бы одного из полей.</p>
-    </section>
+<section>
+    <h3>ТЗ: Поиск по гиперссылке</h3>
+    <p class="fragment">Поиск осуществляется как по названию так и по значению гиперссылки. Критерием заполненности условия фильтрации считается заполнение хотя бы одного из полей.</p>  
+</section>
 
-    <section data-background="media/giper.png"
-             data-background-size="contain">
-    </section>
-
-    <section>
-        <h4>Тестовые данные</h4>
-        <table>
-            <tbody>
-            <thead>
+<section>
+    <h3>Тестовые данные</h3>
+    <table>
+        <tbody>
+        <thead>
             <tr>
                 <th> </th>
                 <th>Название ссылки</th>
                 <th>Значение ссылки</th>
             </tr>
-            </thead>
+        </thead>
             <tr>
                 <td>1</td>
                 <td>Яндекс</td>
                 <td>https://ya.ru</td>
             </tr>
-            <tr>
+           <tr>
                 <td>2</td>
                 <td>Яндекс</td>
                 <td>https://google.com</td>
@@ -807,208 +805,244 @@
             <tr>
                 <td>3</td>
                 <td></td>
-                <td>https://ya.ru</td>
+                <td>https://ya.ru</td> 
             </tr>
             </tbody>
-        </table>
-    </section>
+    </table> 
+</section>
 
-    <section>
-        <h4>Обнаружилось</h4>
-        <p class="fragment">При поиске по значению https://ya.ru - только один результат.</p>
-        <table class="fragment">
-            <thead>
+<section>
+    <h3>Обнаружилось</h3>
+    <p class="fragment">При поиске по значению https://ya.ru - только один результат.</p>
+    <table class="fragment">
+          <thead>
             <tr>
                 <th> </th>
                 <th>Название ссылки</th>
                 <th>Значение ссылки</th>
             </tr>
-            </thead>
-            <tr>
-                <td>3</td>
-                <td></td>
-                <td>https://ya.ru</td>
-            </tr>
+        </thead>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td>https://ya.ru</td> 
+        </tr>
             </tbody>
-        </table>
-    </section>
-
-    <section>
-        <h4>Тестовые данные</h4>
-        <table>
-            <tbody>
-            <thead>
-            <tr>
-                <th> </th>
-                <th>Название ссылки</th>
-                <th>Значение ссылки</th>
-            </tr>
-            </thead>
-            <tr>
-                <td>1</td>
-                <td>Яндекс</td>
-                <td>https://ya.ru</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Яндекс</td>
-                <td>https://google.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td></td>
-                <td>https://ya.ru</td>
-            </tr>
-            </tbody>
-        </table>
-        <p class="fragment">Потому что в требовании было написано: "Поиск как по значению, так и по названию"</p>
-    </section>
-
-    <section data-background="media/giper.png"
-             data-background-size="contain">
-    </section>
-
-    <section>
-        <h4>Программа, соответствущая плохому ТЗ, непригодна</h4>
-    </section>
-
-    <section>
-        <h4>Расхождение между программой и ее спецификацией считается ошибкой тогда, и только тогда, когда спецификация существует и она правильна.</h4>
-        <p class="fragment">Правильность работы программы нельзя доказать логически.</p>
-    </section>
-
-    <section>
-        <h4>Отсюда следует</h4>
-        <p>Чтобы хорошо протестировать программу, недостаточно сравнить реализацию с ТЗ, потому что:</p>
-        <ul>
-            <li>ТЗ может быть неправильным </li>
-            <li>ТЗ вообще может не быть </li>
-            <li>Требования могут быть неявные</li>
-        </ul>
-    </section>
-
-    <section>
-        <h4>Явное требование</h4>
-        <p class="fragment">Поле "Адрес доставки" являетяс обязательным. Покупатель с него может ввести Города, Улицы и дома</p>
-        <h4>Неявное требование</h4>
-        <p class="fragment">Не во всех городах есть улицы (Зеленоград), а иногда нужно ввести еще район</p>
-    </section>
-
-    <section><br>
-        <h4>Тестовые оракулы (ч1)</h4>
-        <ul class="fragment">
-            <li>[history] История</li>
-            <small class="fragment">Сравнить с предыдущей версией.</small>
-            <li>[image] Имидж</li>
-            <small class="fragment">Система соответствует имиджу организации, ее бренду или репутации.</small>
-            <li>[comparable products] Похожие продукты</li>
-            <small class="fragment">Сравнить с похожими продукатами/услугами/системами.</small>
-            <li>[claims] Требования</li>
-            <small class="fragment">Соответствует требованиям, как зафиксированным в докуметации/ТЗ, так и обсужденным на встречах.</small>
-            <li>[users expectations] Ожидания пользователей</li>
-            <small class="fragment">Система соответствует ожиданиям пользователей.</small>
-            <li>[product] Продукт / Внутренняя согласованность</li>
-            <small class="fragment">Каждый элемент системы (или продукта) будет работать по тому же принципу, что и другие сопоставимые элементам в той же системе</small>
-        </ul>
-    </section>
-
-    <section><br>
-        <h4>Тестовые оракулы (ч2)</h4>
-        <ul>
-            <li>[purpose] Предназначение</li>
-            <small class="fragment">Система выполняет ту функциональность, для которой она предназначена.</small>
-            <li>[standarts, statutes] Стандарты и законы</li>
-            <small class="fragment">Система соответствует законам или стандартам, которые имеют отношение к продукту.</small>
-            <li>[familar problems] Схожие проблемы</li>
-            <small class="fragment">Нет проблем похоижих на те, с которыми мы уже сталкивались.</small>
-            <li>[explainability] Объяснимость</li>
-            <small class="fragment">Поведение системы объяснимо.</small>
-            <li>[world] Мир</li>
-            <small class="fragment">Система соответствует представлениям о мире.</small>
-        </ul>
-    </section>
-
-    <section>
-        <p><font color="red">Программный код оракулом быть не может!</font> </p>
-    </section>
-
-
-    <section>
-        <h4>Требование и тест-кейс: чем отличаются?</h4>
-        <p class="fragment"> ТЗ описывает общие правила, а тестовый случай - это одна конкретная ситуация из множества, которые описаны в этом требовании</p>
-    </section>
-
-    <section>
-        <h4>Пример ТЗ</h4>
-        <p>Для всех элементов добавления товара в корзину должен быть тултип с текстом “Положить товар в корзину” (товар не в корзине) и “перейти в корзину” (этот товар уже в корзине)</p>
-    </section>
-
-    <section>
-        <h4>Пример проверки</h4>
-        <ol class="fragment">
-            <li>Открыть карточку товара, который уже в корзине</li>
-            <li>Навести курсор на иконку "В корзине"</li>
-            <li>Появился тултип с текстом "Перейти в корзину"</li>
-        </ol>
-    </section>
-
-</section>
-
-
-
- <section>
-    <h3>Тестирование требований</h3>
-
-
-<section><br>
-    <h4>Зачем?</h4>
-    <img data-src="media/bugs.png">   
-</section>
-
-<section><br>
-     <h4>Корректность</h4>
-     <p class="fragment" align="left">Требование не содержит фактических ошибок
-         <br> <br>  Плохой пример: После набора номера в ожидании соединения пользователь должен слышать короткие гудки </p>
-</section> 
-
-<section><br>
-     <h4>Однозначность</h4>
-     <p class="fragment"  align="left">Требование нельзя понять двояко
-         <br> <br>  Плохой пример: Поиск осуществляется как по названию, так и по значению гиперссылки</p>
-</section> 
-
-<section><br>
-     <h4>Полнота</h4>
-     <p class="fragment"  align="left">Требование содержит исчерпывающую информация о том, что должна и делать система</p>
-</section> 
-
-<section><br>
-     <h4>Совместимость</h4>
-     <p class="fragment"  align="left">Требование не должно противоречить другим требованиям и ограничениям системы
-         <br> <br> Плохой пример: Система должна запрашивать из социальных сетей адрес электронной почты пользователя.</p>
-</section> 
-
-<section><br>
-     <h4>Понятность</h4>
-     <p class="fragment"  align="left">Требование должно быть понятно всей команде разработки и заказчику
-         <br> <br> Плохой пример: Передатчик телефона должен использовать амплитудно-фазовую модуляцию с несущими от 2 до 7,5 МГц с шагом 500 кГц</p>
-</section> 
-
-<section><br>
-     <h4>Осуществимость</h4>
-     <p class="fragment"  align="left">Требование можно реализовать с приемлимыми трудозатратами в рамках существующих технологий
-         <br> <br> Пример: невозможно требовать от системы отклик в 1 миллисекунду при больших нагрузках</p>
-</section> 
-
-<section><br>
-     <h4>Проверяемость</h4>
-     <p class="fragment"  align="left">Требование можно проверить
-         <br> <br> Плохой пример: Система должна работать быстро</p>
+    </table>
+    <p class="fragment">Потому что в требовании было написано: "Поиск как по значению, так и по названию"</p>
 </section> 
 
 <section>
-     <h4>Критерии качества требований</h4>
-     <ul>
+    <h4>Программа, соответствущая плохому ТЗ, непригодна</h4>
+</section>
+
+<section>
+    <h3>А бывает наоборот</h3>
+    <img  data-src="media/featureBug.jpg"> 
+</section>
+
+<section>
+    <h4>Расхождение между программой и ее спецификацией считается ошибкой тогда, и только тогда, когда спецификация существует и она правильна.</h4>
+    <p class="fragment">Правильность работы программы нельзя доказать логически.</p> 
+</section>
+
+<section>
+    <h3>Отсюда следует</h3>
+    <p class="fragment"><span class="fragment highlight-red">Чтобы хорошо протестировать программу, недостаточно сравнить реализацию с ТЗ</span>, потому что:</p>  
+    <ol class="fragment">
+        <li>ТЗ может быть неправильным </li> 
+        <li>ТЗ вообще может не быть </li>
+        <li>Требования могут быть неявные</li> 
+    </ol> 
+</section>
+
+<section>
+    <h3>Явные требования</h3> 
+    <p class="fragment"> Требования, которые явным образом описаны в ТЗ, спецификации</p>
+    <h3>Неявные требования</h3> 
+    <p class="fragment">Не описаны явным образом в ТЗ, но подчиняются жизненным реалиям, законам математики/физики и тд, и зависят от явных требований</p>
+</section>
+
+<section>
+    <h4>Явное требование</h4> 
+    <p class="fragment">Поле "Адрес доставки" являетяс обязательным. Покупатель с него может ввести Города, Улицы и дома</p>
+    <h4>Неявное требование</h4> 
+    <p class="fragment">Не во всех городах есть улицы (Зеленоград), а иногда нужно ввести еще район</p>
+</section>
+
+<section>
+    <h3>Тестовые оракулы </h3>
+    <img data-src="media/oracles.png">  
+</section>
+
+<section>
+    <h3>Тестовые оракулы </h3>
+    <p class="fragment"> Способ распознавания правильного и неправильного поведения продукта</p> 
+    <p class="fragment"> или</p> 
+    <p class="fragment"> Способ генерации ожидаемого результата теста</p>  
+</section>
+
+<section>
+    <h3>History</h3>
+    <h4>История</h4>
+    <p class="fragment">Сравнить с предыдущей версией</p>    
+</section>
+
+<section>
+    <h3>Image</h3>
+    <h4>Имидж, бренд</h4>
+    <p class="fragment">Система соответствует имиджу организации, ее бренду или репутации.</p>    
+</section>
+
+<section>
+    <h3>Comparable products</h3>
+    <h4>Похожие продукты</h4>
+    <p class="fragment">Сравнить с похожими продукатами/услугами/системами</p>    
+</section>
+
+<section>
+    <h3>Claims</h3>
+    <h4>Требования</h4>
+    <p class="fragment">Соответствует требованиям, как зафиксированным в докуметации/ТЗ, так и обсужденным на встречах</p>    
+</section>
+
+<section>
+    <h3>Users expectations</h3>
+    <h4>Ожидания пользователей</h4>
+    <p class="fragment">Система соответствует ожиданиям пользователей</p>    
+</section>
+
+<section>
+    <h3>Product</h3>
+    <h4>Продукт / Внутренняя согласованность</h4>
+    <p class="fragment">Каждый элемент системы (или продукта) будет работать по тому же принципу, что и другие сопоставимые элементам в той же системе.</p>    
+</section>
+
+<section>
+    <h3>Purpose</h3>
+    <h4>Предназначение</h4>
+    <p class="fragment">Система выполняет функции, для которых она предназначена.</p>    
+</section>
+
+<section>
+    <h3>Standarts, statutes</h3>
+    <h4>Стандарты и законы</h4>
+    <p class="fragment">Система соответствует законам или стандартам, которые имеют отношение к продукту.</p>    
+</section>
+
+<section>
+    <h3>Familar problems</h3>
+    <h4>Схожие проблемы</h4>
+    <p class="fragment">Нет проблем похоижих на те, с которыми мы уже сталкивались</p>    
+</section>
+
+<section>
+    <h3>Explainability</h3>
+    <h4>Объяснимость</h4>
+    <p class="fragment">Поведение системы объяснимо</p>    
+</section>
+
+<section>
+    <h3>World</h3>
+    <h4>Мир</h4>
+    <p class="fragment">Система соответствует представлениям о мире</p>    
+</section>
+
+<section>
+    <h3>Тестовые оракулы </h3>
+    <ol class="fragment">
+        <li>history</li> 
+        <li>image</li>  
+        <li>comparable products</li>
+        <li>claims</li>
+        <li>users expectations</li>
+        <li>product</li>
+        <li>purpose</li> 
+        <li>standarts, statutes</li>  
+        <li>familar problems</li>
+        <li>explainability</li>
+        <li>world</li>
+    </ol>
+</section>
+
+<section>
+    <h3>Тестовые оракулы </h3>
+    <p class="fragment"> Программный код оракулом быть не может!</p>    
+</section>
+
+<section>
+    <h3>Требование и тест-кейс: чем отличаются?</h3>
+    <p class="fragment"> ТЗ описывает общие правила, а тестовый случай - это одна конкретная ситуация из множества, которые описаны в этом требовании</p>
+</section>
+
+<section>
+    <h3>Пример ТЗ</h3>
+    <p class="fragment">Для всех элементов добавления товара в корзину должен быть тултип с текстом “Положить товар в корзину” (товар не в корзине) и “перейти в корзину” (этот товар уже в корзине)</p> 
+</section>
+
+<section>
+    <h3>Пример проверки</h3>
+    <ol class="fragment">
+        <li>Открыть карточку товара, который уже в корзине</li> 
+        <li>Навести курсор на иконку "В корзине"</li>  
+        <li>Появился тултип с текстом "Перейти в корзину"</li>
+    </ol> 
+</section>
+
+
+ <section>
+    <h3>2.2 Тестирование требований</h3>  
+</section>
+
+<section>
+    <h3>Зачем?</h3>
+    <img data-src="media/bugs.png">   
+</section>
+
+<section>
+     <h3>Корректность</h3>
+     <p class="fragment">Требование не содержит фактических ошибок</p> 
+     <p class="fragment"> Плохой пример: После набора номера в ожидании соединения пользователь должен слышать короткие гудки </p>
+</section> 
+
+<section>
+     <h3>Однозначность</h3>
+     <p class="fragment">Требование нельзя понять двояко</p>  
+     <p class="fragment"> Плохой пример: Поиск осуществляется как по названию, так и по значению гиперссылки</p> 
+</section> 
+
+<section>
+     <h3>Полнота</h3>
+     <p class="fragment">Требование содержит исчерпывающую информация о том, что должна и делать система</p>  
+</section> 
+
+<section>
+     <h3>Совместимость</h3>
+     <p class="fragment">Требование не должно противоречить другим требованиям и ограничениям системы</p>
+     <p class="fragment"> Плохой пример: Система должна запрашивать из социальных сетей адрес электронной почты пользователя.</p>   
+</section> 
+
+<section>
+     <h3>Понятность</h3>
+     <p class="fragment">Требование должно быть понятно всей команде разработки и заказчику</p>  
+     <p class="fragment"> Плохой пример: Передатчик телефона должен использовать амплитудно-фазовую модуляцию с несущими от 2 до 7,5 МГц с шагом 500 кГц</p>
+</section> 
+
+<section>
+     <h3>Осуществимость</h3>
+     <p class="fragment">Требование можно реализовать с приемлимыми трудозатратами в рамках существующих технологий</p>   
+     <p class="fragment"> Пример: невозможно требовать от системы отклик в 1 миллисекунду при больших нагрузках</p>
+</section> 
+
+<section>
+     <h3>Проверяемость</h3>
+     <p class="fragment">Требование можно проверить</p> 
+     <p class="fragment"> Плохой пример: Система должна работать быстро</p>  
+</section> 
+
+<section>
+     <h3>Критерии качества требований</h3>
+     <ol class="fragment">
         <li>Корректность</li>
         <li>Однозначность </li> 
         <li>Полнота</li>  
@@ -1016,58 +1050,66 @@
         <li>Понятность</li>
         <li>Осуществимость</li>
         <li>Проверяемость</li>
-    </ul>
+    </ol>   
 </section> 
 
 <section>
-     <h4>Как тестировать требования?</h4>
-     <ul>
+     <h3>Как тестировать требования?</h3>
+     <ol class="fragment">
         <li>Предварительное беглое чтение</li> 
         <li>Техники тест-дизайна</li>  
         <li>Тест-кейсы</li>
         <li>Макеты и прототипы интерфейсов</li>
         <li>Понимание предметной области</li>
         <li>Знание уже реализованной части системы</li>
-    </ul>
+    </ol>   
+</section> 
+
+<section>
+    <h3>Итог</h3> 
 </section>
- </section>
-
-<section>    <h3>Итог</h3> </section>
-<section>
-    <h3>Тестирование - это</h3>
-
 
 <section>
+    <h3>Тестирование - это</h3> 
     <p class="fragment" align="left">проверка соответствия реального поведения программы ожидаемому,</p>
     <p class="fragment" align="left">осуществляемая путем наблюдения за ее работой в специальных, искусственно созданных ситуациях,</p> 
     <p class="fragment" align="left">выбранных определенным образом.</p> 
 </section>
 
 <section>
-    <p align="left">
-        <br>проверка соответствия реального поведения программы <font color="red">ожидаемому, </font><br>
-        <br>  осуществляемая путем наблюдения за ее работой в специальных, искусственно созданных ситуациях,<br>
-        <br>выбранных определенным образом.<br>
-    </p>
+    <h3>Тестирование - это</h3> 
+    <ul>
+        <li>проверка соответствия реального поведения программы <font color="red">ожидаемому, </font></li> 
+        <li>  осуществляемая путем наблюдения за ее работой в специальных, искусственно созданных ситуациях,</li> 
+        <li>выбранных определенным образом.</li>
+    </ul>
 </section>
 
-    <section>
-        <p align="left">
-            <br>проверка соответствия реального поведения программы <font color="red">ожидаемому, </font><br>
-            <br>  осуществляемая путем <font color="red">наблюдения за ее работой</font> в специальных, искусственно созданных ситуациях,<br>
-            <br>выбранных определенным образом.<br>
-        </p>
-    </section>
+<section>
+    <h3>Тестирование - это</h3> 
+    <ul>
+        <li>проверка соответствия реального поведения программы ожидаемому, </li> 
+        <li>  осуществляемая путем <font color="red">наблюдения за ее работой</font> в специальных, искусственно созданных ситуациях,</li> 
+        <li>выбранных определенным образом.</li>
+    </ul>
+</section>
 
-    <section>
-        <p align="left">
-            <br>проверка соответствия реального поведения программы <font color="red">ожидаемому, </font><br>
-            <br>  осуществляемая путем <font color="red">наблюдения за ее работой</font> в специальных, искусственно созданных ситуациях,<br>
-            <br> <font color="red">выбранных определенным образом.</font><br>
-        </p>
-    </section>
+<section>
+    <h3>Тестирование - это</h3> 
+    <ul>
+        <li>проверка соответствия реального поведения программы ожидаемому,</li> 
+        <li> осуществляемая путем наблюдения за ее работой в <font color="red">специальных, искусственно созданных ситуациях</font>,</li> 
+        <li>выбранных определенным образом.</li>
+    </ul>
+</section>
 
-
+<section>
+    <h3>Тестирование - это</h3> 
+    <ul>
+        <li>проверка соответствия реального поведения программы ожидаемому,</li> 
+        <li>осуществляемая путем наблюдения за ее работой в специальных, искусственно созданных ситуациях,</li> 
+        <li><font color="red">выбранных определенным образом.</font></li>
+    </ul>
 </section>
 
 <section>
@@ -1075,61 +1117,19 @@
     <img width="750" data-src="media/cat.jpg">
 </section>
 
-    <section>
-        <section data-background="media/07.png"
-                 data-background-size="contain">
-        </section>
-
-        <section data-background="media/01.png"
-                 data-background-size="contain">
-            <h1 align="left">#1</h1>
-        </section>
-
-
-        <section data-background="media/02.png"
-                 data-background-size="contain">
-            <h1 align="left">#2</h1>
-        </section>
-
-
-        <section data-background="media/03.png"
-                 data-background-size="contain">
-            <h1 align="left">#3</h1>
-        </section>
-
-
-        <section data-background="media/04.png"
-                 data-background-size="contain">
-            <h1 align="left">#4</h1>
-        </section>
-
-
-        <section data-background="media/05.png"
-                 data-background-size="contain">
-            <h1 align="left">#5</h1>
-        </section>
-
-
-        <section data-background="media/06.png"
-                 data-background-size="contain">
-            <h1 align="left">#6</h1>
-        </section>
-    </section>
-
 <section>
     <h3>Домашнее задание</h3>
-    <h4> MindMap для чата Телеграф</h4>
-    <ul>
+    <h4> MindMap для чата Ki1ogram</h4>
+    <ul class="fragment">
         <li>Требований нет</li> 
         <li>Готового продукта еще нет</li> 
     </ul>
-    <p class="fragment">Задача: Составить схему, декомпозирующую продукт для предстоящего тестирования
-        <br><small>(вспоминаем оракулы, вспоминаем как выглядят массенд;еры и что они умеют)</small></p>
+    <p class="fragment">Задача: Составить схему, декомпозирующую продукт для предстоящего тестирования</p>
 </section>
 
 <section>
     <h3>Литература</h3>
-      <ul>
+      <ul class="fragment">
         <li> <a href="http://www.developsense.com/blog/2012/07/few-hiccupps/">Oracles</a></li> 
         <li> <a href="http://okiseleva.blogspot.ru/2015/01/blog-post_64.html"> Исследовательские туры</a></li> 
         <li> <a href="http://lib.mdpu.org.ua/e-book/vstup/L/Kalbertson.pdf">Быстрое тестирование, Калбертсон</a></li>
@@ -1138,7 +1138,7 @@
     </ul>
 </section>
 
-
+    -->
 
 </div></div>
 
