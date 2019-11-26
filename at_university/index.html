@@ -7,8 +7,8 @@
 
     <title>Тестирование ПО</title>
 
-    <meta name="description" content="Краткое описание презентации">
-    <meta name="author" content="Имя автора">
+    <meta name="description" content="Testing">
+    <meta name="author" content="Sergeeva Anastasia">
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/white.css">
@@ -21,334 +21,347 @@
 
     <section>
         <h1>Тестирование ПО</h1>
-        <br> <small>
-        <ul class="fragment"><b>Темы лекции:</b>
-            <li>Разработка программного обеспечения</li>
-            <li>Релизный процесс</li>
-            <li>Тестировщик в процессе разработки</li>
-            <li>Сложности при разработке ПО</li>
-	    </ul></small>
+        <br>
         <p class="author">Сергеева Анастасия</p>
     </section>
 
+    <section>
+        <ul>
+            <li>Бакалавр БФ ПНИПУ специальности ИВТ</li>
+            <li>Учусь в магистратуре БФ ПНИПУ</li>
+            <li>6+ лет в тестировании</li>
+            <li>2+ лет в Яндексе</li>
+            <li>Одна из авторов и наставников курса по тестированию Яндекс.Практикума</li>
+        </ul>
+    </section>
 
+    <SECTION>
+        <section>
+            <h1>Чего не будет в лекции</h1>
+            <table><tr><ul class="fragment">
+                <li>Инсайдов из разных фирм</li>
+                <li>Полного курса тестировщика</li>
+                <li>Рассказа о том, как писать автотесты</li>
+                <li>ЖЦ ПО и методологии разработки</li>
+            </ul><td></td>
+                <td><img   align="right" height="200"  src="img/1.jpg" alt="YANDEX" align="right"></td></tr></table>
+
+
+        </section>
+
+        <section>
+            <h1>Что будет в лекции</h1>
+            <ul class="fragment">
+                <li>Тестирование как профессия</li>
+                <li>Вводная лекция</li>
+                <li>Технологии</li>
+                <li>О собеседованиях</li>
+            </ul>
+        </section>
+    </SECTION>
+    <section>
+        <h2>Нужны ли тестировщики?</h2>
+        <pre class="fragment">ДА</pre>
+        <pre class="fragment">ЗП по Москве на 2018 год:
+        <img  height="300"  src="img/0.jpg" alt="YANDEX" align="right"></pre>
+    </section>
+
+    <section>
+        <h3>Тестирование - это</h3>
+        <section>
+            <li class="fragment">Поиск ошибок</li>
+        </section>
+        <section>
+            <li><del>Поиск ошибок</del></li>
+            <li class="fragment">Проверка ПО</li>
+        </section>
+        <section>
+            <li><del>Поиск ошибок</del></li>
+            <li><del>Проверка ПО</del></li>
+        </section>
+        <section>
+            <ol>проверка соответствия реального поведения программы ожидаемому, осуществляемая путем наблюдения за ее работой в специальных, искусственно созданных ситуациях, выбранных определенным образом.</ol>
+        </section>
+        <section>
+            <ol>Процесс, содержащий в себе все активности жизненного цикла, как динамические, так и статические, касающиеся планирования, подготовки и оценки программного продукта и связанных с этим результатов работ с целью определить, что они соответствуют описанным требованиям, показать, что они подходят для заявленных целей и для определения дефектов [ISTQB, глоссарий]</ol>
+        </section>
+        <section>
+            <table><tr><ul>
+                <ol>долго, дорого, но экономит и время, и деньги</ol>
+            </ul><td></td>
+                <td><img  height="200"  src="img/2.jpg" alt="YANDEX" align="right"></td></tr></table>
+        </section>
+
+    </section>
+    <section>
+        <h3>Зачем?</h3>
+        <img  src="img/3.jpg" alt="YANDEX" align="right">
+    </section>
+
+    <section>
+        <h3>Говорим правильно</h3>
+        <section>
+            <img  height="400" src="img/11.jpeg" alt="YANDEX" align="center">
+        </section>
+        <section>
+        <ul>
+            <li>Ошибка</li>
+            <small class="fragment">[ISQTB] Действие человека, которое приводит к неправильному результату.</small>
+            <li>Дефект</li>
+            <small class="fragment"> - результат ошибочного действия: можно не заметить, но он есть. <br> [ISQTB] Изъян в компоненте или системе, который может привести компонент или систему к невозможности выполнить требуемую функциональность, например, неверный оператор или определение данных. Дефект, обнаруженный во время выполнения, может привести к отказам  компонента или системы.</small>
+            <li>Сбой</li>
+            <small class="fragment"> - проявление дефекта при использовании системы</small>
+            <li>Баг</li>
+            <small class="fragment"> - жаргонный синоним "дефект"</small>
+        </ul>
+        </section>
+    </section>
+    <section>
+        <h3>Этапы тестирования</h3>
+        <section>
+            <ol>
+                <li>Тест-анализ</li>
+                <li>Таст-дизайн</li>
+                <li>Написание документации</li>
+                <li>Тестирование</li>
+            </ol>
+        </section>
+        <section>
+            <p>Тест-анализ - это процесс при котором изучаются требования к ПО, декомпозируются, ищутся несоответствия и серые зоны и т.д.</p>
+        </section>
+        <section>
+            <p>Требования - условия или возможности, необходимые пользователю для решения определенных задач или достижения определенных целей, которые должны быть достигнуты для выполнения контракта, стандартов, спецификации, или других формальных документов. [IEEE 610]</p>
+        </section>
+        <section>
+            <img  src="img/4.png" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <p>На странице должна быть кнопка "Закрыть"</p>
+            <ul class="fragment">
+                <li>Где находится?</li>
+                <li>Как выглядит?</li>
+                <li>Как закрывает?</li>
+                <li>Какая приемлемая скорость закрытия?</li>
+                <li>и тд</li>
+            </ul>
+        </section>
+        <section>
+            <img  src="img/5.jpg" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <img  src="img/6.png" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <img  height="500" src="img/7.png" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <p>Я рисую в XMind</p>
+            <p>Есть аналоги для рисования mind map</p>
+        </section>
+        <section>
+            <p>Наши требования ИДЕАЛЬНЫЕ и мы их все знаем?</p>
+            <img  src="img/9.jpeg" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <p>Тест-дизайн - это процесс проектирования и создания тестовых случаев</p>
+        </section>
+        <section>
+            <ul>
+                <li>Исчерпывающее тестирование</li>
+                <li>Классы эквивалентности</li>
+                <li>Анализ граничных условий</li>
+                <li>Ортогональные вектора</li>
+                <li>Попарное тестирование</li>
+            </ul>
+            <img height="200" src="img/12.jpg" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <ul>
+                <li>Тест-кейсы</li>
+                <li>Чек-лист</li>
+                <li>Тест-план</li>
+                <li>Отчет об ошибке</li>
+                <li>Отчет о тестировании</li>
+            </ul>
+            <img height="200" src="img/13.jpg" alt="YANDEX" align="center">
+        </section>
+    </section>
+
+    <section>
+        <section>
+            <h2>Цель тестирования</h2>
+            <p align="left" class="fragment">Предоставление обратной связи о состояния продукта</p>
+            <h2>Задача тестирования</h2>
+            <p align="left" class="fragment">Выявить проблемы, которые могут возникнуть при работе с продуктом и сделать все возможное для улучшения его качества</p>
+        </section>
+        <section>
+            <h2>Качество ПО</h2>
+            <p class="fragment" align="left">[Software Quality] — совокупность характеристик ПО, которые относятся к способности продукта удовлетворять запланированным, установленным и предполагаемым потребностям.</p>
+        </section>
+    </section>
+    <section>
+        <section data-background-transition="zoom" data-background="img/8.jpg">
+
+        </section>
+    </section>
+
+    <section>
+        <h3>Тестирование АПИ</h3>
+        <section>
+            <p>API (Application Programming Interface) — это интерфейс программирования, интерфейс создания приложений</p>
+            <p>_____________</p>
+            <p class="fragment">контракт, который предоставляет программа. «Ко мне можно обращаться так и так, я обязуюсь делать то и это»</p>
+            <p>(с) Хабр</p>
+        </section>
+        <section>
+            <ul>
+                <li>Postman</li>
+                <li>CURL</li>
+            </ul>
+        </section>
+        <section>
+            <p>Запрос:</p>
+            <pre class="js size-XS"><code data-trim data-noescape>POST -d  "key=trnsl.1.1.20191103T112235Z
+                    <br>.a986e944f6b970.4d44c8acfdf5b5e89017e2
+                    <br>&format=plain&lang=en-de&text=Hello world"
+                    <br>https://translate.yandex.net/api/v1.5/tr.json/translate</>
+            </pre></code>
+            <p>Ответ:</p>
+            <pre class="js size-XS"><code data-trim data-noescape>"code":200,"lang":"en-ru",<br>"text":["Привет мир"]}</code></pre>
+        </section>
+    </section>
+    <section>
+        <h3>Нагрузочное тестирование</h3>
+        <section>
+            <p>Яндекс.Танк</p>
+            <p>JMeter</p>
+        </section>
+        <section>
+            <img  src="img/10.png" alt="YANDEX" align="center">
+        </section>
+        <section>
+            <img  src="img/11.png" alt="YANDEX" align="center">
+        </section>
+    </section>
+
+    <section>
+        <h3>Автоматизированное тестирование</h3>
+        <section><h3>Unit-тесты</h3>
+            <ul>
+                <li>Белый ящик</li>
+                <li>Черный ящик</li>
+            </ul>
+        </section>
+        <section>
+            <pre class="js size-XS"><code data-trim data-noescape>
+                function getParam(func) {
+                if (!Array.isArray(func)) {
+                throw new Error('func is not an array');
+                }
+
+                if (func.length !== 5) {
+                throw new Error('Wrong amount of func');
+                }
+
+                <span>/* ... */</span>
+}
+                </code></pre>
+        </section>
+
+        <section>
+            <pre class="js size-XS"><code data-trim>
+describe('getParam', () => {
+    it('should throw error when func is not array', ()=>{
+        const cb = () => getParam('not array');
+
+        assert.throws(cb, /func is not array/);
+    });
+            </code>
+            </pre>
+        </section>
+        <section>
+            <div style="display: flex">
+                    <pre class="js"><code data-trim>
+assert.deepEqual
+assert.deepStrictEqual
+assert.doesNotThrow
+assert.equal
+assert.fail
+assert.fail
+assert.ifError
+                    </code></pre>
+                <pre class="js"><code data-trim>
+assert.notDeepEqual
+assert.notDeepStrictEqual
+assert.notEqual
+assert.notStrictEqual
+assert.ok
+assert.strictEqual
+assert.throws
+                    </code></pre>
+            </div>
+        </section>
+        <section>
+            <h3>Подходы к разработке</h3>
+            <ul>
+                <li>Test last development [TDL]</li>
+                <li>Test driven development [TDD]</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Интеграционное тестирование</h3>
+            <h4>END-TO-END</h4>
+            <p>Selenium + js / java / c++ / python + драйвер браузера + webdriver IO</p>
+        </section>
+
+        <section>
+            <pre class="java size-XS"><code data-trim>
+                public class TestOne extends setting {
+                @Test
+                public void oneT() {
+                driver.get("https://yandex.ru/");
+                driver.findElement(By.cssSelector("#pasp > a")).click();
+                driver.findElement(By.cssSelector("#contest-name")).sendKeys("test acm");
+                driver.findElement(By.xpath("//*[@id=\"create-user\"]")).click();
+            </code></pre>
+        </section>
+        <section>
+            <pre class="java size-XS">
+                <code data-trim>
+                        public void setUp() {
+                        driver = new ChromeDriver();
+                        driver.get("https://yandex.ru/");
+                        Cookie ck = new Cookie("Session_id", "3:1573582119.Qzv3O-UkDA");
+                        Cookie setCk = new Cookie("yandexuid", "2871081526991954");
+                        driver.manage().deleteAllCookies();
+                        driver.manage().addCookie(ck);
+                        driver.manage().addCookie(setCk);
+    }
+                </code>
+            </pre>
+        </section>
+    </section>
 <!-- Добавлять новые слайды сюда -->
     <section>
-
-        <section>
-            <h2>Часть 1</h2>
-            <h2>Разработка программного обеспечения</h2>
-        </section>
-
-        <section>
-            <ul>
-                <li><h4>Что такое ПО?</h4> </li>
-                <p class="fragment">Любая программа от маленькой страницы до мощной системы проектирования <br> <img  width="178" height="138" data-src="img/1.jpg" alt="YANDEX" align="right"></p>
-
-                <li><h4 class="fragment">Откуда это все берется?</h4> </li>
-                <p class="fragment">Идея или необходимость? <br> <img  src="img/2.jpg" alt="YANDEX" align="right"></p>
-
-            </ul>
-        </section>
-
-        <section>
-            <p>Выделяем следующие виды разработок:</p>
-            <ul>
-                <li class="fragment"><p> <b>Заказная</b> - заказчик пришел в ИТ-фирму, чтобы решить свою проблему (необходимсоть)</p></li>
-                <li class="fragment"><p><b>Продуктовая</b> - проанализировав рынок, было выявлено, что есть необходимость в каком-либо сервисе - его и делаем и продаем (идея)</p></li>
-            </ul>
-        </section>
-
-        <section>
-            <p>Поняли, что необходимость в ПО есть.<br> Что дальше?</p>
-            <h3 class="fragment">Разрабатываем!<br> <img   height="400" data-src="img/3.jpg" alt="YANDEX"> </h3>
-        </section>
-
-        <section>
-            <h4>Этапы разработки ПО</h4>
-            <ul>
-                <li class="fragment">Анализ требований и проектирование </li>
-                <small class="fragment">Требования — это перечень свойств, качеств, характеристик, ограничений ПО, подлежащих реализации.</small>
-                <li class="fragment">Кодирование и дизайн</li>
-                <li class="fragment">Тестирование и отладка</li>
-                <small class="fragment">Тестирование — это проверка соответствия реального поведения ПО ожидаемому</small>
-                <li class="fragment">Внедрение</li>
-                <li class="fragment">Сопровождение и улучшение</li>
-            </ul>
-            </section>
-        <section>
-            <h2>Словарь</h2>
-            <small align="left">
-                <b>Фиксить</b> (от английского слова "fix") — чинить, ремонтировать.
-                <br><b>Фикс</b> — выкатка того, что исправляет работу системы в "сломанном" месте.
-                <br><b>Сетапы</b> — заданное окружение, на котором проводится проверка системы.
-                <small>Например, определенное устройство, модель, версия операционной системы, версия браузера, скорость соединения.</small>
-                <br><b>Катить на прод / катить в прод / выкатка в прод / заливать на прод / задеплоить в проде (или продакшене)</b> — развернуть систему на серверах, где работает приложение для пользователей.
-                <br><b>Фича</b> [от англ. feature — особенность] — жаргонное слово, обозначающее недокументированные необычные особенности в работе системы.
-            </small>
-        </section>
-
-        <section>
-            <small> В зависимости от вида разработки и выбранной <span class="fragment highlight-red visible current-fragment">методологии</span> эти этапы могут использоваться один или несколько раз.</small>
-            <h3 class="fragment">Методологии разработки</h3>
-               <h4 class="fragment">Waterfall</h4><p class="fragment">Каскадная модель - Водопад - Waterfall<br>
-                    <img align="center"  height="450"  data-src="img/5.jpg" alt="YANDEX"></p>
-        </section>
-        <section>
-            <h3>Плюсы модели</h3>
-            <ul class="fragment">
-                <li>Полное документирование каждого этапа;</li>
-                <li>Четкое планирование сроков и затрат;</li>
-                <li>Прозрачность процессов для заказчика;</li>
-            </ul>
-            <h3>Минусы модели</h3>
-            <ul class="fragment">
-            <li>Надо сразу знать все требования;</li>
-            <li>Нельзя ничего существенно изменить;</li>
-            <li>Велика цена изменений в требованиях;</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Методологии разработки</h3>
-            <h4>Гибкая модель - Agile</h4>
-            <p> - это философия. <!--Аджайлисты верят, что идеальные продукты создают команды самостоятельных профессионалов.</p> -->
-            <small><ul class="fragment"><b>Основные принципы:</b>
-
-                    <li>это быть командами профессионалов, не нуждающейся в начальниках</li>
-                    <li>это работа вместе с клиентом, эксперименты и готовность к изменениям</li>
-                    <li>это быстрый выпуск работающего качественного продукта</li>
-
-            </ul></small>
-            <p class="fragment">мы рассмотрим методики — Scrum и Kanban</p>
-            <small><p class="fragment">- это набор готовых правил, показывающих как организовать рабочий процесс по принципам Аджайл</p></small>
-   </section>
-
-        <section>
-		<img  align=" center " height="600"  data-src="img/6.jpg" alt="YANDEX">
-        </section>
-
-        <section>
-            <h3>Плюсы модели</h3>
-            <ul class="fragment">
-                <li>Короткие и понятные итерации в итоге которых - рабочая версия продукта;</li>
-                <li>Тесное общение всех участников процесса разработки;</li>
-                <li>Гибкая система внесения изменений;</li>
-            </ul>
-            <h3>Минусы модели</h3>
-            <ul class="fragment">
-                 <li>Высокая степень самоорганизации;</li> <!-- улучшение эффективности собственной работы, все время обмен инфы по проекту, быть мотивированным и самоорганизованным -->
-                <li>Постоянные изменения проекта отодвигают его от финальной версии;</li>
-                <li>Сложность в оценка времени достижения "идеальной" версии и ее цена;</li>
-            </ul>
-        </section>
-        <section data-background-video="img/1.mp4" style="text-shadow: 0 0 10px #fff;">
-
-            <h3>Как выглядит работа в рамках скрам-модели:</h3>
-            <ul>
-                <li class="fragment">Составляем список задач и доработок </li>
-                <li class="fragment">Выбираем те задачи, которые делаем сейчас </li>
-                <li class="fragment">Назначаем ответственных на каждую задачу и исполняем их</li>
-                <li class="fragment">Получаем новую версию продукта</li>
-                <li class="fragment">Ретроспектива</li>
-                <li class="fragment">Планируем следующий спринт</li>
-            </ul>
-        </section>
-        <section>
-	<img  align=" center " height="500"  data-src="img/6.1.jpg" alt="YANDEX">
-		</section>
-	    <section>
-            <h3>Особенности модели:</h3>
-            <ul>
-                <li>Каждая задача - "фича", которую можно "продать";</li>
-                <li>Нет оценки временем, но есть приоритеты;</li>
-                <li>Нет спринтов - всё делается тогда, когда это нужно;</li>
-                <li>Лимит на количество задач;</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Плюсы модели:</h3>
-            <ul class="fragment">
-                <li>Визуализация;</li>
-                <li>Не надо планировать - надо делать;</li>
-                <li>Внимание к мелочам;</li>
-            </ul>
-            <h3>Минусы модели:</h3>
-            <ul class="fragment">
-                <p>аналогично scram + </p>
-                <li>Нет сроков;</li>
-                <li>Лимит на количество задач</li>
-            </ul>
-        </section>
+        <h3>Собеседование</h3>
+        <img height="300" src="img/16.jpg" alt="YANDEX" align="center">
     </section>
 
     <section>
-        <section>
-            <h2>Часть 2</h2>
-            <h2 class="fragment">Релизный процесс</h2>
-        </section>
-
-        <section>
-            <h3>C чего начинается релиз?</h3>
-            <img align=" center " height="200"  data-src="img/3.gif" alt="YANDEX">
-            <img class="fragment" align=" center " height="400"  data-src="img/11.jpg" alt="YANDEX">
-        </section>
-
-        <section>
-            <ul>Преимущество баг-трекеров:
-                <small>
-                <li>Типирование и группировка задач.</li>
-                <li>Назначение и уведомления всех участников.</li>
-                <li>Настраиваемый жизненный цикл для задачи.</li>
-                <li>Отслеживание продвижение проекта при помощи досок.</li>
-                <li>Автоматический сбор статистики.</li>
-                </small>
-            </ul>
-            <p class="fragment">Пример просмотра задач в <a>Яндекс.Трекер</a>:</p>
-            <img align=" center " height="300"  data-src="img/12.jpg" alt="YANDEX">
-
-
-        </section>
-
-        <section>
-            <p>Пример реальной встречи</p>
-            <img  align=" center " height="600"  data-src="img/10.jpg" alt="YANDEX">
-        </section>
-        <section>
-            <b>Итог встречи</b>
-            <ul class="fragment">
-                    <li>Теперь все в курсе изменений;</li>
-                    <li>Нашли решение проблем;</li>
-                    <li>Обновили диаграмму и проанализировали ритм работы</li>
-            </ul>
-        </section>
-    <section>
-            <p><b>Burndown</b><br> - диаграмма сгорания задач, где шкала OY - затраченное время на задачи, а OX - дни до конца спринта</p>
-            <img class="fragment" align=" center " height="400"  data-src="img/tr.png" alt="YANDEX">
-        </section>
-
-        <section data-background-transition="zoom" data-background="img/tr.png">
-        </section>
-
-        <section>
-            <p>Пример виртуальной встречи</p>
-            <img  align=" center " height="600"  data-src="img/18.png" alt="YANDEX">
-        </section>
-
-
-        <section>
-            <p>Система контроля версий</p>
-                <img  height="600"  data-src="img/13.png" alt="YANDEX">
-
-        </section>
-        <section>
-            <p>Пример использования системы контроля версий</p>
-            <img class="fragment" height="400"  data-src="img/16.jpg" alt="YANDEX">
-                    <img class="fragment" height="400"  data-src="img/17.jpg" alt="YANDEX">
-
-        </section>
-
-    </section>
-
-    <section>
-
-        <section>
-            <h2>Часть 3</h2>
-            <h2 class="fragment">Тестировщик в процессе разработки</h2>
-        </section>
-
-        <section>
-            <h3>Когда начинается тестирование?</h3>
-            <ul class="fragment">
-                <li><b>Планирование и проектирование</b> - изучение требований, уточнение интересующих вопросов</li>
-                <li><b>Кодирование и дизайн</b> - тестирование в ветке разработчика, помощь в поиске причин дефекта</li>
-                <li><b>Исправление ошибок</b> - проверка функциональности и возвращение их на доработку</li>
-                <li><b>Сопровождение</b> - анализ ошибок от пользователей</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Зачем начинать тестирование так рано?</h3>
-           <div class="fragment"> <h4>Цена дефекта увеличивается со временем его обнаружения</h4>
-            <img  height="400"  data-src="img/15.jpg" alt="YANDEX"></div>
-        </section>
-
-        <section>
-            <h3>Что делает тестировщик?</h3>
-            <ul class="fragment">
-                <li>Тестирование в ветке разработчика</li>
-                <li>Тестирование релиза</li>
-                <li>Исследование и регистрация дефектов</li>
-                <li>Проектирование тест-планов и сценариев</li>
-                <li>Постановка задач на автотесты</li>
-                <li>Анализ требований</li>
-                <li>Внесение улучшений в продукт</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Что надо уметь?</h3>
-            <ul class="fragment">
-                <li>Планировать действия</li>
-                <li>Проектировать тесты</li>
-                <li>Наблюдать результат выполнения тестов</li>
-                <li>Находить дефекты</li>
-                <li>Описывать дефекты</li>
-                <li>Общаться с людьми</li>
-            </ul>
-        </section>
-
-    </section>
-    <section><h2>Часть 4</h2>
-        <h2 class="fragment">Сложности разработки</h2></section>
-    <section>
-        <ul>
-            <li>Чем ближе к ПО человек, тем он сложнее</li>
-            <li>Предметная область</li>
-            <li>ПО - средство, а не цель</li>
-            <li>Невозможно отладить все до конца</li>
-            <li>Меняющийся мир</li>
-            <li>Сопровождение</li>
-            <li>Человеческий фактор</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Литература</h2>
+        <h3>Спасибо за внимание!</h3>
+        <h4>Вопросы?</h4>
+        <p>______________________________</p>
+        <h3>Литература</h3>
         <small>
-        <ul>
-            <li>«Тестировщик — больше, чем профессия» <a href="http://habrahabr.ru/post/221447/">http://habrahabr.ru/post/221447/</a></li>
-            <li>«Что должен уметь начинающий тестировщик»: С чего начать, как прокачаться, во что углубиться <a href="http://testbase.ru/">http://testbase.ru/</a></li>
-            <li>О Waterfall: <a href="http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-kaskadnaya-model-waterfall">http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-kaskadnaya-model-waterfall/</a></li>
-            <li>О Scrum: <a href="http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-skram-po-shagam/">http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-skram-po-shagam/</a></li>
-            <li>О Kanban: <a href="http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-kanban/">http://xbsoftware.ru/blog/zhiznennyj-tsykl-po-kanban/</a></li>
-            <li>Роман Савин «Тестирование dot.com»</li>
-            <li>Сэм Канер «Тестирование программногo обеспечения»</li>
-        </ul>
+            <ul>
+                <li>«Тестировщик — больше, чем профессия» <a href="http://habrahabr.ru/post/221447/">http://habrahabr.ru/post/221447/</a></li>
+                <li>«Что должен уметь начинающий тестировщик»: С чего начать, как прокачаться, во что углубиться <a href="http://testbase.ru/">http://testbase.ru/</a></li>
+                <li>Роман Савин «Тестирование dot.com»</li>
+                <li>Сэм Канер «Тестирование программногo обеспечения»</li>
+            </ul>
         </small>
-    </section>
-    <section>
-        <h2>Задание</h2>
-        <small>
-        <ol>
-            <li>Зайти на страницу Яндекс.Коннект  <a>https://connect.yandex.ru</a></li>
-            <li>Авторизоваться пользователем <br>login: <b>creator@it-people-testing-2019.yaconnect.com</b> <br>password: <b>Creator1234</b></li>
-            <li>Зайти на страницу Яндекс.Коннект</li>
-            <li>Перейти в разде "Админка"</li>
-            <li>Нажать кнопку "Добавить" - "Добавить сотрудника"</li>
-            <li>Заполнить форму своими данными</li>
-            <li>Нажать кнопку "Добавить"</li>
-            <li>Зайти в коннект своим пользователем и проверить, что доступ есть</li>
-        </ol>
-        </small>
-        <p>Цель: к следующему занятию я включу там Яндекс.Трекер и можно будет работать с реальным баг-трекером
-        </p>
-    </section>
-    <section>
-        <h2>Спасибо за внимание!</h2>
-        <h2>Вопросы?</h2>
-        <img  height="300"  data-src="img/qr.png" alt="YANDEX">
-        <small align="left">Телеграмм-канал https://t.me/joinchat/AAAAAETFB2MnASh5-MxEyQ</small>
+        <img height="200" src="img/15.jpeg" alt="YANDEX" align="center">
     </section>
 
 </div></div>
